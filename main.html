@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <title>Basic HTML Table</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
 
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <table>
+        <caption>Student Roll List</caption>
+        <thead>
+            <tr>
+                <th>Roll number</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Aarav Sharma</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Diya Mehta</td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
-
 </html>
